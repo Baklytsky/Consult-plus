@@ -5,4 +5,133 @@
   padding: 0;
   margin: 0;
 }
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------Email&Phone---------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+.contact-line {
+  width: 100%;
+  background-color: $contact-line;
+.vertical-line {
+  border-bottom: 1px solid $address;
+}
+  span {
+    font-size: $smaller2;
+    letter-spacing: 0.6px;
+    color: $mail-phone;
+  }
+  a {
+    font-size: $smaller2;
+    letter-spacing: 0.6px;
+    color: $address;
+    transition: all .3s linear;
+    &:hover {
+      color: $active;
+    }
+  }
+}
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------HEADER---------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+header {
+  .icon-hamburger {
+    color: $black;
+  }
+  ul {
+    li {
+      padding: 12px 0;
+      a {
+        font-size: $smaller2;
+        font-weight: 700;
+        color: $nav;
+        transition: all .3s linear;
+        &:hover {
+          color: $active;
+        }
+      }
+      .active-nav {
+        color: $active;
+      }
+    }
+  }
+}
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------SLIDER---------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+.control-type {
+  width: 5%;
+  height: 10%;
+  opacity: 1;
+  background-color: $black;
+  position: absolute;
+  top: 40%;
+  overflow: hidden;
+  transition: all .3s linear;
+  &:hover {
+    background-color: $active;
+  }
+}
+.slider {
+  width: 100%;
+  background: url("../img/slider.png") no-repeat center / cover;
+  padding: 300px 0;
+  position: relative;
+}
+
+.directions {
+  background-color: $active;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  h2 {
+    font-size: $smaller;
+    color: $white;
+  }
+  p {
+    font: $normal Lato, sans-serif;
+    color: $white;
+  }
+  ul>li {
+    &:nth-child(odd) {
+      border-right: 0.5px solid darken($blue, 10%);
+    }
+  }
+  li {
+    color: $white;
+    border-bottom: 0.5px solid darken($blue, 10%);
+    background-color: $blue;
+    transition: all .3s linear;
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+    h3 {
+      font-size: $smaller;
+      color: $white;
+    }
+    span {
+      font-size: $small;
+      color: $white;
+      border: 1px solid $white;
+      border-radius: 100%;
+      padding: 3px 3px 0;
+    }
+    .view-btn {
+      font-size: $smaller;
+      color: $white;
+      background-color: $green;
+      border: 1px solid $green;
+      border-radius: 24px;
+      padding: 10px 24px;
+      transition: all .3s linear;
+      &:hover {
+        background-color: $white;
+        color: $green;
+      }
+    }
+  }
+  .active-direction {
+    background-color: darken($blue, 10%);
+  }
+}
 
