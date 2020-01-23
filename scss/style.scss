@@ -84,11 +84,11 @@ header {
   right: 0;
   left: 0;
 
-  h2 {
+  h3 {
     font-size: $smaller;
     color: $white;
   }
-  p {
+  h2 {
     font: $normal Lato, sans-serif;
     color: $white;
   }
@@ -117,21 +117,71 @@ header {
       padding: 3px 3px 0;
     }
     .view-btn {
-      font-size: $smaller;
-      color: $white;
-      background-color: $green;
-      border: 1px solid $green;
-      border-radius: 24px;
-      padding: 10px 24px;
-      transition: all .3s linear;
-      &:hover {
-        background-color: $white;
-        color: $green;
-      }
+      @include btn;
     }
   }
   .active-direction {
     background-color: darken($blue, 10%);
   }
 }
-
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------ABOUT-US---------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+.about-us {
+  padding: 5% 0;
+  h3 {
+    font-size: $smaller;
+  }
+  h2 {
+    font-size: $normal-plus;
+    font-weight: 700;
+    color: $black;
+  }
+  p {
+    @include text-p;
+  }
+  .read-btn {
+    @include btn;
+  }
+  .picture-block {
+    max-width: 300px;
+    position: relative;
+  }
+  .excellence {
+    max-width: 140px;
+    position: absolute;
+    top: 65%;
+    right: 25%;
+  }
+}
+/*--------------------------------------------------------------------------------------------------------
+---------------------------------------------OUR-STEPS--------------------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+.our-steps {
+  background-color: $grey;
+  padding: 100px 0;
+  .steps-img {
+    max-width: 60px;
+  }
+  h3 {
+    font-size: $smaller;
+  }
+  h2 {
+    font-size: $normal-plus;
+    font-weight: 700;
+    color: $black;
+  }
+  h4 {
+    font-size: $small;
+    font-weight: 700;
+    color: $black;
+  }
+  .steps-number {
+    font-size: $small;
+    font-weight: 700;
+    color: $green;
+  }
+  p {
+    @include text-p;
+  }
+}
