@@ -215,3 +215,45 @@
 .icon-instagram:before {
   content: "\36";
 }
+.icon-times:before {
+  content: "\37";
+}
+.icon-cancel:before {
+  content: "\38";
+}
+.icon-cancel-squared:before {
+  content: "\39";
+}
+.icon-arrow-circle-left:before {
+  content: "\21";
+}
+.icon-chevron-circle-left:before {
+  content: "\22";
+}
+.icon-hand-o-left:before {
+  content: "\23";
+}
+.icon-caret-left:before {
+  content: "\24";
+}
+.icon-hand-o-right:before {
+  content: "\25";
+}
+.icon-chevron-circle-right:before {
+  content: "\26";
+}
+.icon-caret-right:before {
+  content: "\27";
+}
+.icon-arrow-circle-right:before {
+  content: "\28";
+}
+.icon-download:before {
+  content: "\29";
+}
+.icon-spinner:before {
+  content: "\2a";
+}
+.icon-circle-o:before {
+  content: "\2b";
+}
