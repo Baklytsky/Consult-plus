@@ -5,7 +5,7 @@ const autoprefixer 	= require('gulp-autoprefixer');
 const cleancss 		= require('gulp-clean-css');
 const browserSync 	= require('browser-sync').create();
 
- 		
+
 
 gulp.task('styles', function () {
     return gulp.src('./scss/**/*.scss')
@@ -23,6 +23,8 @@ gulp.task('serve', function() {
         }
     });
     gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("./scss/**/*.scss").on('change', browserSync.reload);
+    gulp.watch("./js/**/*.js").on('change', browserSync.reload);
 });
 
 gulp.task('watch', function () {

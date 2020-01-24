@@ -38,6 +38,11 @@
   .slider {
     padding: 20% 0;
   }
+  .happy-clients {
+    img {
+      width: 68px;
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -127,6 +132,31 @@
     }
     .steps-number {
       font-size: $normal;
+    }
+  }
+  .projects {
+    .project-block {
+      .projects-btn {
+        font-size: $small;
+      }
+    }
+    .full-projects-btn {
+      font-size: $small;
+    }
+  }
+  .happy-clients {
+    h3 {
+      font-size: $small;
+    }
+    h2 {
+      font-size: $bigger;
+    }
+    h4 {
+      font-size: $normal;
+    }
+    p {
+      font-size: $small2;
+      line-height: 25px;
     }
   }
 }
