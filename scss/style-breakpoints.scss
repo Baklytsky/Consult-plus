@@ -13,6 +13,23 @@
     right: auto;
     left: auto;
   }
+  .footer {
+    p {
+      padding: 0 120px 35px 0;
+    }
+    .email-form {
+      font-family: Montserrat, sans-serif;
+      font-size: $small;
+      padding: 20px 0 20px 35px;
+      border-radius: 40px;
+    }
+    .form-btn {
+      font-family: Montserrat, sans-serif;
+      font-size: $small;
+      padding: 20px 35px;
+      border-radius: 40px;
+    }
+  }
 }
 @media (min-width: 768px) {
   .contact-line {
@@ -33,7 +50,6 @@
         }
       }
     }
-
   }
   .slider {
     padding: 20% 0;
@@ -41,6 +57,16 @@
   .happy-clients {
     img {
       width: 68px;
+    }
+  }
+  .our-blog {
+    .blog-img {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      bottom: 0;
+      right: 0;
     }
   }
 }
@@ -54,9 +80,39 @@
       max-width: 200px;
     }
   }
+  .contact-us {
+    .contact-block {
+      padding: 40px 32px;
+    }
+  }
+  .our-blog {
+    .top-posts-btn {
+      font-size: $small;
+      padding: 10px 35px;
+    }
+    .all-posts-btn {
+      font-size: $small;
+      padding: 10px 25px;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
+  .our-blog, .happy-clients, .our-steps, .about-us, .our-blog, .contact-us, .footer {
+    h3 {
+      font-size: $small;
+    }
+    h2 {
+      font-size: $bigger;
+    }
+    h4 {
+      font-size: $normal;
+    }
+    p {
+      font-size: $small2;
+      line-height: 25px;
+    }
+  }
   .contact-line {
     span {
       font-size: $small;
@@ -94,16 +150,6 @@
     }
   }
   .about-us {
-    h3 {
-      font-size: $small;
-    }
-    h2 {
-      font-size: $bigger;
-    }
-    p {
-      font-size: $small2;
-      line-height: 25px;
-    }
     .read-btn {
       font-size: $small;
       border-radius: 20px;
@@ -117,19 +163,6 @@
     }
   }
   .our-steps {
-    h3 {
-      font-size: $small;
-    }
-    h2 {
-      font-size: $bigger;
-    }
-    h4 {
-      font-size: $normal;
-    }
-    p {
-      font-size: $small2;
-      line-height: 25px;
-    }
     .steps-number {
       font-size: $normal;
     }
@@ -144,19 +177,14 @@
       font-size: $small;
     }
   }
-  .happy-clients {
-    h3 {
-      font-size: $small;
-    }
-    h2 {
-      font-size: $bigger;
-    }
-    h4 {
+  .contact-us {
+    a {
       font-size: $normal;
     }
-    p {
-      font-size: $small2;
-      line-height: 25px;
+  }
+  .footer {
+    h2 {
+      font-size: $normal-plus;
     }
   }
 }

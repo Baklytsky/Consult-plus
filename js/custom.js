@@ -4,6 +4,13 @@ let forward = document.querySelectorAll('.forward'),
     itemClients = document.querySelectorAll('.item-clients'),
     clientsComment = document.querySelectorAll('.clients-comment'),
     indicators = document.querySelectorAll('.indicators'),
+    topPostsBtn = document.querySelector('.top-posts-btn'),
+    topPosts = document.querySelector('.top-posts'),
+    allPostsBtn = document.querySelector('.all-posts-btn'),
+    allPosts = document.querySelector('.all-posts'),
+    allPostsList = document.querySelector('.all-posts-list'),
+    blogImg = document.querySelector('.blog-img'),
+    blogPage = document.querySelector('.our-blog'),
     block;
 
 startPage();
@@ -23,6 +30,27 @@ function reset() {
         })
     }
 }
+
+allPostsBtn.addEventListener('click', function () {
+    topPosts.style.display = 'none';
+    blogImg.style.display = 'none';
+    allPosts.style.display = 'block';
+    allPostsList.style.display = 'block';
+    topPostsBtn.classList.remove('active');
+    allPostsBtn.classList.add('active');
+    blogPage.style.maxHeight = '1500px';
+});
+
+topPostsBtn.addEventListener('click', function () {
+    topPosts.style.display = 'block';
+    blogImg.style.display = 'block';
+    allPosts.style.display = 'none';
+    allPostsList.style.display = 'none';
+    topPostsBtn.classList.add('active');
+    allPostsBtn.classList.remove('active');
+    blogPage.style.maxHeight = '750px';
+});
+
 
 function startPage() {
     clientsComment[0].style.display = 'block';
